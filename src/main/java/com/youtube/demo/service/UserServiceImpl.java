@@ -15,15 +15,18 @@ public class UserServiceImpl implements UserService {
 	protected UserRepository userRepository;
 
 	@Override
-	public User save(User user) {
-		// TODO Auto-generated method stub
+	public User save(User user) { 
 		return this.userRepository.save(user);
 	}
 
 	@Override
-	public List<User> findAll() {
-		// TODO Auto-generated method stub
+	public List<User> findAll() { 
 		return this.userRepository.findAll();
+	}
+
+	@Override
+	public void deleteUser(Long id) {
+		this.userRepository.delete(id);
 	}
 	
 	
