@@ -19,7 +19,7 @@ public class User  extends ParentEntity {
 	@Column(name = "second_name", nullable= true, length = 255)
 	private String secondName;
 	
-	@Column(name = "s", nullable= false, length = 255)
+	@Column(name = "first_surname", nullable= false, length = 255)
 	private String firstSurname;
 	
 	@Column(name = "second_surname", nullable= true, length = 255)
@@ -28,7 +28,7 @@ public class User  extends ParentEntity {
 	@Column(name = "phone", nullable= true, length = 30)
 	private String phone;
 	
-	@Column(name = "address", nullable= true, length = 150)
+	@Column(name = "address", nullable= false, length = 150)
 	private String address;
 	
 	
